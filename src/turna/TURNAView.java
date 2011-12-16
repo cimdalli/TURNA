@@ -135,6 +135,7 @@ public class TURNAView extends FrameView {
 
         javax.swing.ActionMap actionMap = org.jdesktop.application.Application.getInstance(turna.TURNAApp.class).getContext().getActionMap(TURNAView.class, this);
         newMenuItem.setAction(actionMap.get("showNewProjectBox")); // NOI18N
+        newMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_N, java.awt.event.InputEvent.CTRL_MASK));
         newMenuItem.setText(resourceMap.getString("newMenuItem.text")); // NOI18N
         newMenuItem.setName("newMenuItem"); // NOI18N
         newMenuItem.setPreferredSize(new java.awt.Dimension(133, 22));
